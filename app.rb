@@ -1,4 +1,6 @@
-require 'sinatra/base'
+require 'sinatra'
+require 'sinatra/activerecord'
+require './config/environments'
 
 module BgcBot
   class App < Sinatra::Base

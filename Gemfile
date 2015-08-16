@@ -9,3 +9,4 @@ gem "sinatra-activerecord"
 gem "pg"
 gem 'slack-ruby-client'
 gem 'terminal-table'
+gem 'rake'
