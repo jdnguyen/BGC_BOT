@@ -127,7 +127,8 @@ game duration N - N is the minutes for game duration
       end
 
       def message(data, &block)
-        return unless data['channel'] == 'C095AMPU3'
+        puts data['channel']
+        #return unless data['channel'] == 'C095AMPU3'
 
         message = ''
 
