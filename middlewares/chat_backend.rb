@@ -127,7 +127,7 @@ game duration N - N is the minutes for game duration
       end
 
       def message(data, &block)
-        return if data['channel'] != 'C03SX3GQ8' && ENV['BGC_ONLY']
+        return if data['channel'] != 'C03SX3GQ8' && ENV['BGC_ONLY'] == 'true'
 
         message = ''
         begin
