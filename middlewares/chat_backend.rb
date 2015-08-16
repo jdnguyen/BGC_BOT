@@ -127,11 +127,9 @@ game duration N - N is the minutes for game duration
       end
 
       def message(data, &block)
-        puts data['channel']
-        #return unless data['channel'] == 'C095AMPU3'
+        return unless data['channel'] == 'C03SX3GQ8'
 
         message = ''
-
         begin
           message = block.call
         rescue Exception => e
