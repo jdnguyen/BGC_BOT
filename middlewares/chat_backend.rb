@@ -1,61 +1,60 @@
-require 'faye/websocket'
-require 'thread'
-require 'redis'
-require 'json'
-require 'erb'
+require 'data_mapper'
+require 'slack'
 
-module ChatDemo
+DataMapper.setup(:default, 'sqlite::memory:')
+
+class Game
+  include DataMapper::Resource
+
+  property :id,    Serial
+  property :title, String
+end
+
+module BgcBot
   class ChatBackend
-    KEEPALIVE_TIME = 15 # in seconds
-    CHANNEL        = "chat-demo"
 
     def initialize(app)
-      @app     = app
-      @clients = []
-      uri = URI.parse(ENV["REDISCLOUD_URL"])
-      @redis = Redis.new(host: uri.host, port: uri.port, password: uri.password)
-      Thread.new do
-        redis_sub = Redis.new(host: uri.host, port: uri.port, password: uri.password)
-        redis_sub.subscribe(CHANNEL) do |on|
-          on.message do |channel, msg|
-            @clients.each {|ws| ws.send(msg) }
-          end
+      client.on :message do |data|
+        case data['text']
+          when 'roll dice' then
+            roll_dice(data)
+          when 'flip coin' then
+            flip_coin(data)
+          when 'games list' then
+            list_games(data)
         end
       end
-    end
 
-    def call(env)
-      if Faye::WebSocket.websocket?(env)
-        ws = Faye::WebSocket.new(env, nil, {ping: KEEPALIVE_TIME })
-        ws.on :open do |event|
-          p [:open, ws.object_id]
-          @clients << ws
-        end
-
-        ws.on :message do |event|
-          p [:message, event.data]
-          @redis.publish(CHANNEL, sanitize(event.data))
-        end
-
-        ws.on :close do |event|
-          p [:close, ws.object_id, event.code, event.reason]
-          @clients.delete(ws)
-          ws = nil
-        end
-
-        # Return async Rack response
-        ws.rack_response
-
-      else
-        @app.call(env)
-      end
+      client.start!
     end
 
     private
-    def sanitize(message)
-      json = JSON.parse(message)
-      json.each {|key, value| json[key] = ERB::Util.html_escape(value) }
-      JSON.generate(json)
-    end
+
+      def list_games(data)
+        list = Game.all.map do |game|
+          game.attributes
+        end
+
+        message(data, list.to_json)
+      end
+
+      def flip_coin(data)
+        message(data, rand(1) == 0 ? 'heads' : 'tail')
+      end
+
+      def roll_dice(data)
+        message(data, (rand(6) + 1).to_s)
+      end
+
+      def message(data, message)
+        client.message(:channel => data['channel'], :text => message)
+      end
+
+      def client
+        @client ||= begin
+          Slack::RealTime::Client.new
+        end
+      end
+
   end
 end
