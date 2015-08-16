@@ -8,7 +8,8 @@ end
 
 def get_random_game(data)
   message(data) do
-    format(Game.find(Game.count))
+    random = Game.find(rand(Game.count) + 1)
+    format(random)
   end
 end
 
@@ -31,6 +32,40 @@ def get_games_for_duration(data)
     number = get_args(data, 2).to_i
 
     format_table(Game.select{ |game| game[:min_time] <= number && ((game[:max_time] && game[:max_time] >= number) || game[:max_time].nil?) })
+  end
+end
+
+def play_game(data)
+  message(data) do
+    game = game_for_id(data, 2)
+
+    play = Play.new
+    play.game = game
+    play.save!
+
+    "Have fun playing #{game.name}!"
+  end
+end
+
+def get_game_stat(data)
+  message(data) do
+    game = game_for_id(data, 2)
+
+    played = game.plays.order('created_at DESC').first(5).map{ |play| play.created_at.strftime("%m/%d/%Y") }
+
+    winnings = game.wins.group(:user_id).count
+    win_rows = winnings.map do |win|
+      ["#{User.find(win[0]).user_id}", win[1]]
+    end
+
+    "Number of times played: #{game.plays.count}
+
+Number of times voted for: #{game.user_votes.count}
+
+Last Played ``` #{played.join("\n")} ```
+
+Previous Winners ```#{Terminal::Table.new :headings => ['User', 'Wins'], :rows => win_rows}```
+"
   end
 end
 
@@ -68,9 +103,11 @@ def format(game)
   data << ['Ranking', game[:ranking]]
   data << ['# of Players', format_players(game)]
   data << ['Duration', format_time(game)]
-  data << ['Description', game[:description]]
+  data << ['Rules', game[:rules]]
   data << ['Link', game[:link]]
 
+  "```#{Terminal::Table.new :rows => data}
 
-  data.map{ |info| info.join(': ')}.join("\n")
+#{game[:description]}```
+"
 end

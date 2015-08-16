@@ -14,6 +14,7 @@ def my_stat(data)
     end
 
     "<@#{user.user_id}>
+User ID: #{user.user_id}
 
 Has Voted For ```#{Terminal::Table.new :headings => ['Game', 'Votes'], :rows => vote_rows}```
 

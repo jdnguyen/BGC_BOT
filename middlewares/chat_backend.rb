@@ -10,6 +10,8 @@ module BgcBot
     def initialize(app)
       client.on :message do |data|
         case data['text']
+          when /^whois/ then
+            whois(data)
           when /^promote/ then
             promote_user(data)
           when /^demote/ then
@@ -42,6 +44,10 @@ module BgcBot
             get_random_game(data)
           when /^game get/
             get_game(data)
+          when /^game play/
+            play_game(data)
+          when /^game stat/
+            get_game_stat(data)
           when /^game players/
             get_games_for_players(data)
           when /^game duration/

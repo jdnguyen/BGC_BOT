@@ -7,6 +7,7 @@ games = [
         :min_player => 1,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/31260/agricola',
+        :rules => 'http://zmangames.com/rulebooks/Agricola_ENG.pdf',
         :min_time => 30,
         :max_time => 150,
         :description => "In Agricola, you're a farmer in a wooden shack with your spouse and little else. On a turn, you get to take only two actions, one for you and one for the spouse, from all the possibilities you'll find on a farm: collecting clay, wood, or stone; building fences; and so on. You might think about having kids in order to get more work accomplished, but first you need to expand your house. And what are you going to feed all the little rugrats?
@@ -27,6 +28,7 @@ Each player also starts with a hand of 7 Occupation cards (of more than 160 tota
         :min_player => 2,
         :max_player => 4,
         :link => 'https://boardgamegeek.com/boardgame/36218/dominion',
+        :rules => 'https://riograndegames.com/getFile.php?id=348',
         :min_time => 30,
         :max_time => nil,
         :description => "In Dominion, each player starts with an identical, very small deck of cards. In the center of the table is a selection of other cards the players can \"buy\" as they can afford them. Through their selection of cards to buy, and how they play their hands as they draw them, the players construct their deck on the fly, striving for the most efficient path to the precious victory points by game end.
@@ -39,6 +41,7 @@ Dominion is not a CCG, but the play of the game is similar to the construction a
         :min_player => 2,
         :max_player => 7,
         :link => 'https://boardgamegeek.com/boardgame/68448/7-wonders',
+        :rules => 'http://rprod.com/uploads/file/7WONDERS_RULES_US_COLOR.pdf',
         :min_time => 30,
         :max_time => nil,
         :description => "You are the leader of one of the 7 great cities of the Ancient World. Gather resources, develop commercial routes, and affirm your military supremacy. Build your city and erect an architectural wonder which will transcend future times.
@@ -53,6 +56,7 @@ In essence, 7 Wonders is a card development game. Some cards have immediate effe
         :min_player => 5,
         :max_player => 10,
         :link => 'https://boardgamegeek.com/boardgame/128882/resistance-avalon',
+        :rules => 'http://games4you.rs/sites/default/files/The%20Resistance%20Avalon.pdf',
         :min_time => 30,
         :max_time => nil,
         :description => "The Resistance: Avalon pits the forces of Good and Evil in a battle to control the future of civilization. Arthur represents the future of Britain, a promise of prosperity and honor, yet hidden among his brave warriors are Mordred's unscrupulous minions. These forces of evil are few in number but have knowledge of each other and remain hidden from all but one of Arthur's servants. Merlin alone knows the agents of evil, but he must speak of this only in riddles. If his true identity is discovered, all will be lost."
@@ -63,6 +67,7 @@ In essence, 7 Wonders is a card development game. Some cards have immediate effe
         :min_player => 4,
         :max_player => 7,
         :link => 'https://boardgamegeek.com/boardgame/3955/bang',
+        :rules => 'http://www.dvgiochi.net/bang/bang_rules.pdf',
         :min_time => 20,
         :max_time => 40,
         :description => "\"The Outlaws hunt the Sheriff. The Sheriff hunts the Outlaws. The Renegade plots secretly, ready to take one side or the other. Bullets fly. Who among the gunmen is a Deputy, ready to sacrifice himself for the Sheriff? And who is a merciless Outlaw, willing to kill him? If you want to find out, just draw (your cards)!\" (From back of box)
@@ -84,6 +89,7 @@ There are 22 different types of cards in the draw deck. Most common are the BANG
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/150376/dead-winter-crossroads-game',
+        :rules => 'http://www.plaidhatgames.com/images/games/dead-of-winter/rules.pdf',
         :min_time => 100,
         :max_time => nil,
         :description => "Dead of Winter: A Crossroads Game, the first game in this series, puts 2-5 players in a small, weakened colony of survivors in a world where most of humanity is either dead or diseased, flesh-craving monsters. Each player leads a faction of survivors with dozens of different characters in the game.
@@ -100,6 +106,7 @@ Dead of Winter has players making frequent, difficult, heavily- thematic, wildly
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/132531/roll-galaxy',
+        :rules => 'http://www.goblins.net/sites/default/files/RollftGalaxy.pdf',
         :min_time => 45,
         :max_time => nil,
         :description => "Roll for the Galaxy is a dice game of building space empires for 2 - 5 players. Your dice represent your populace, whom you direct to develop new technologies, settle worlds, and ship goods. The player who best manages his workers and builds the most prosperous empire wins!"
@@ -110,6 +117,7 @@ Dead of Winter has players making frequent, difficult, heavily- thematic, wildly
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/155624/specter-ops',
+        :rules => 'http://www.plaidhatgames.com/images/games/specter-ops-shadow-of-babel/rules.pdf',
         :min_time => 60,
         :max_time => 90,
         :description => "A secret agent of A.R.K. has infiltrated a top secret Raxxon facility, attempting to complete three mission objectives before they escape - but they are hunted by genetically modified Raxxon Hunters. Players can choose which side they wish to join.
@@ -122,6 +130,7 @@ Specter Ops is a sci-fi, stealth ops game of hidden movement that's similar to S
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/120677/terra-mystica',
+        :rules => 'http://zmangames.com/rulebooks/Terra_Mystica.pdf',
         :min_time => 60,
         :max_time => 150,
         :description => "In the land of Terra Mystica dwell 14 different peoples in seven landscapes, and each group is bound to its own home environment, so to develop and grow, they must terraform neighboring landscapes into their home environments in competition with the other groups.
@@ -146,6 +155,7 @@ Proximity to other groups is a double-edged sword in Terra Mystica. Being close 
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/14996/ticket-ride-europe',
+        :rules => 'http://cdn1.daysofwonder.com/tickettoride/en/img/te_rules_2015_en.pdf',
         :min_time => 30,
         :max_time => 60,
         :description => "Ticket to Ride: Europe takes you on a new train adventure across Europe. From Edinburgh to Constantinople and from Lisbon to Moscow, you'll visit great cities of turn-of-the-century Europe. Like the original Ticket to Ride, the game remains elegantly simple, can be learned in 5 minutes, and appeals to both families and experienced gamers. Ticket to Ride: Europe is a complete, new game and does not require the original version.
@@ -160,6 +170,7 @@ The overall goal remains the same, collect and play train cards in order to plac
         :min_player => 2,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/160499/king-new-york',
+        :rules => 'http://www.world-of-board-games.com.sg/docs/King-of-New-York.pdf',
         :min_time => 40,
         :max_time => nil,
         :description => "There's always something happening in the city that never sleeps. Maybe it's the lights, maybe it's the energy, or maybe it's the giant monsters trying to demolish the place!
@@ -178,6 +189,7 @@ The monsters from King of New York can be used in KoT and vice versa, but the po
         :min_player => 2,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/2651/power-grid',
+        :rules => 'https://riograndegames.com/getFile.php?id=698',
         :min_time => 120,
         :max_time => nil,
         :description => "Power Grid is the updated release of the Friedemann Friese crayon game Funkenschlag. It removes the crayon aspect from network building in the original edition, while retaining the fluctuating commodities market like Crude: The Oil Game and an auction round intensity reminiscent of The Princes of Florence.
@@ -194,6 +206,7 @@ Additionally, players must acquire the raw materials (coal, oil, garbage, and ur
         :min_player => 2,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/13/catan',
+        :rules => 'http://www.catan.com/en/download/?SoC_rv_Rules_091907.pdf',
         :min_time => 90,
         :max_time => nil,
         :description => "In Catan (formerly The Settlers of Catan), players try to be the dominant force on the island of Catan by building settlements, cities, and roads. On each turn dice are rolled to determine what resources the island produces. Players collect these resources (cards)-wood, grain, brick, sheep, or stone-to build up their civilizations to get to 10 victory points and win the game.
@@ -210,6 +223,7 @@ Points are accumulated by building settlements and cities, having the longest ro
         :min_player => 3,
         :max_player => 10,
         :link => 'https://boardgamegeek.com/boardgame/147949/one-night-ultimate-werewolf',
+        :rules => 'http://fully-faltoo.com/uploads/werewolf.pdf',
         :min_time => 10,
         :max_time => nil,
         :description => "No moderator, no elimination, ten-minute games.
@@ -224,6 +238,7 @@ Because One Night Ultimate Werewolf is so fast, fun, and engaging, you'll want t
         :min_player => 3,
         :max_player => 7,
         :link => 'https://boardgamegeek.com/boardgame/163166/one-night-ultimate-werewolf-daybreak',
+        :rules => 'http://www.redmeeple.com/site/images/Rules/One_Night_Ultimate_Werewolf_Daybreak_Rules(EN).pdf',
         :min_time => 10,
         :max_time => nil,
         :description => "One Night Ultimate Werewolf Daybreak is a fast game for 3-7 players in which everyone gets a hidden role, each with a special ability. (No plain \"villagers\" here!) In the course of a single morning, your village will decide who among them is a werewolf...because all it takes is finding one werewolf to win!
@@ -236,6 +251,7 @@ Daybreak includes eleven new roles, and it can be played on its own or combined 
         :min_player => 2,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/3076/puerto-rico',
+        :rules => 'https://riograndegames.com/getFile.php?id=592',
         :min_time => 90,
         :max_time => 150,
         :description => "In Puerto Rico players assume the roles of colonial governors on the island of Puerto Rico. The aim of the game is to amass victory points by shipping goods to Europe or by constructing buildings.
@@ -256,6 +272,7 @@ Players earn victory points for owning buildings, for shipping goods, and for ma
         :min_player => 3,
         :max_player => 5,
         :link => 'https://boardgamegeek.com/boardgame/157969/sheriff-nottingham',
+        :rules => 'https://gusandcodotnet.files.wordpress.com/2014/09/son_rulebook_ch09_singlepages.pdf',
         :min_time => 60,
         :max_time => nil,
         :description => "Prince John is coming to Nottingham! Players, in the role of merchants, see this as an opportunity to make quick profits by selling goods in the bustling city during the Prince's visit. However, players must first get their goods through the city gate, which is under the watch of the Sheriff of Nottingham. Should you play it safe with legal goods and make a profit, or risk it all by sneaking in illicit goods? Be mindful, though, as the Sheriff always has his eyes out for liars and tricksters and if he catches one, he very well may confiscate those goods for himself!
@@ -270,6 +287,7 @@ Do you have what it takes to be seen as an honest merchant? Will you make a deal
         :min_player => 3,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/103343/game-thrones-board-game-second-edition',
+        :rules => 'https://images-cdn.fantasyflightgames.com/filer_public/30/4f/304f72e3-4fe4-4f91-bfbe-75133161b092/va65_agot2_rulebook_web.pdf',
         :min_time => 120,
         :max_time => 240,
         :description => "King Robert Baratheon is dead, and the lands of Westeros brace for battle.
@@ -294,6 +312,7 @@ Tides of Battle cards are an optional mechanism that brings an element of unpred
         :min_player => 3,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/1927/munchkin',
+        :rules => 'http://www.worldofmunchkin.com/rules/munchkin_rules.pdf',
         :min_time => 90,
         :max_time => nil,
         :description => "Munchkin is a satirical card game based on the cliches and oddities of Dungeons and Dragons and other role-playing games. Each player starts at level 1 and the winner is the first player to reach level 10. Players can acquire familiar D&D style character classes during the game which determine to some extent the cards they can play.
@@ -306,6 +325,7 @@ There are two types of cards - treasure and encounters. Each turn the current pl
         :min_player => 3,
         :max_player => 6,
         :link => 'https://boardgamegeek.com/boardgame/438/scotland-yard',
+        :rules => 'https://www.fgbradleys.com/rules/Scotland%20Yard.pdf',
         :min_time => 45,
         :max_time => nil,
         :description => "In Scotland Yard, one of the players takes on the role of Mr. X. His job is to move from point to point around the map of London taking taxis, buses or subways. The detectives - that is, the remaining players acting in concert - move around similarly in an effort to move into the same space as Mr. X. But while the criminal's mode of transportation is nearly always known, his exact location is only known intermittently throughout the game."
@@ -316,6 +336,7 @@ There are two types of cards - treasure and encounters. Each turn the current pl
         :min_player => 4,
         :max_player => 8,
         :link => 'https://boardgamegeek.com/boardgame/24068/shadow-hunters',
+        :rules => 'http://zmangames.com/rulebooks/Shadow_Hunters.pdf',
         :min_time => 45,
         :max_time => nil,
         :description => "Shadow Hunters is a survival board game set in a devil-filled forest in which three groups of characters-the Shadows, creatures of the night; the Hunters, humans who try to destroy supernatural creatures; and the Neutrals, civilians caught in the middle of this ancient battle-struggle against each other to survive.
@@ -338,8 +359,11 @@ The key to victory is to identify your allies and enemies early because once you
 ]
 
 
-games.each do |game|
-  unless Game.find_by_name(game[:name])
+games.each do |game_data|
+  game = Game.find_by_name(game_data[:name])
+  if game
+    game.update_attributes(game_data)
+  else
     Game.create(game)
   end
 end
