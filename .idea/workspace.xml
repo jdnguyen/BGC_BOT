@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19f39369-1fb1-412d-bfa8-9142d4c1d8c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments.rb" afterPath="$PROJECT_DIR$/config/environments.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/general.rb" afterPath="$PROJECT_DIR$/lib/general.rb" />
     </list>
     <ignored path="ruby-websockets-chat-demo.iws" />
@@ -97,7 +96,7 @@
           <file leaf-file-name="general.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/general.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="5" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
+                <state line="38" column="3" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -822,7 +821,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/general.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
+        <state line="38" column="3" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

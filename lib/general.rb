@@ -34,7 +34,7 @@ end
 
 def flip_coin(data)
   message(data) do
-    rand(1) == 0 ? 'heads' : 'tails'
+    rand(2) == 0 ? 'heads' : 'tails'
   end
 end
 
