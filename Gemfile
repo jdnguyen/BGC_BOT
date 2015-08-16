@@ -2,9 +2,10 @@ source "https://rubygems.org"
 
 ruby "1.9.3"
 
-gem "faye-websocket"
 gem "sinatra"
 gem "puma"
-gem "redis"
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "pg"
 gem 'slack-ruby-client'
-gem 'data_mapper'
+gem 'terminal-table'
