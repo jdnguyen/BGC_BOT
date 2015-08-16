@@ -1,5 +1,5 @@
 configure :production, :development do
-  db = URI.parse('')
+  db = URI.parse()
 
   ActiveRecord::Base.establish_connection(
       :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,

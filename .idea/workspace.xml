@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19f39369-1fb1-412d-bfa8-9142d4c1d8c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150816001862_add_play.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150816001863_add_rules_to_game.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/play.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middlewares/chat_backend.rb" afterPath="$PROJECT_DIR$/middlewares/chat_backend.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/current_user.rb" afterPath="$PROJECT_DIR$/lib/current_user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments.rb" afterPath="$PROJECT_DIR$/config/environments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/game.rb" afterPath="$PROJECT_DIR$/models/game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/games.rb" afterPath="$PROJECT_DIR$/lib/games.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/general.rb" afterPath="$PROJECT_DIR$/lib/general.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ruby-websockets-chat-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,7 +97,7 @@
           <file leaf-file-name="general.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/general.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="99" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+                <state line="31" column="5" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -134,7 +124,7 @@
           <file leaf-file-name="environments.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/environments.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="18" selection-start="57" selection-end="57" vertical-scroll-proportion="0.016393442">
+                <state line="1" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.016393442">
                   <folding />
                 </state>
               </provider>
@@ -206,10 +196,10 @@
         <option value="$PROJECT_DIR$/lib/slack_extension.rb" />
         <option value="$PROJECT_DIR$/lib/current_user.rb" />
         <option value="$PROJECT_DIR$/middlewares/chat_backend.rb" />
-        <option value="$PROJECT_DIR$/lib/general.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150816001863_add_rules_to_game.rb" />
         <option value="$PROJECT_DIR$/lib/games.rb" />
+        <option value="$PROJECT_DIR$/lib/general.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/config/environments.rb" />
       </list>
@@ -802,16 +792,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/general.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150816001863_add_rules_to_game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="99" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150816001863_add_rules_to_game.rb">
+    <entry file="file://$PROJECT_DIR$/middlewares/chat_backend.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="25" column="33" selection-start="695" selection-end="695" vertical-scroll-proportion="0.40064102">
           <folding />
         </state>
       </provider>
@@ -830,9 +820,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlewares/chat_backend.rb">
+    <entry file="file://$PROJECT_DIR$/lib/general.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="695" selection-end="695" vertical-scroll-proportion="0.40064102">
+        <state line="31" column="5" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -846,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="57" selection-end="57" vertical-scroll-proportion="0.016393442">
+        <state line="1" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.016393442">
           <folding />
         </state>
       </provider>

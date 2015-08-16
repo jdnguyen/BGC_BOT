@@ -22,7 +22,7 @@ def help_message(data)
         ["my stat", "print your votes and game wins"]
     ]
 
-    "HELP ```#{Terminal::Table.new :headings => ['Command', 'Description'], :rows => rows}```"
+    "```#{Terminal::Table.new :headings => ['Command', 'Description'], :rows => rows}```"
   end
 end
 
