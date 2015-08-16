@@ -26,14 +26,14 @@ GEM
       websocket-driver (>= 0.3.1)
     i18n (0.7.0)
     json (1.8.3)
+    kgio (2.9.2)
     minitest (5.8.0)
     multipart-post (2.0.0)
     pg (0.18.2)
-    puma (2.6.0)
-      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
+    raindrops (0.13.0)
     sinatra (1.4.3)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -51,6 +51,10 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unicorn (4.8.2)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     websocket-driver (0.3.4)
 
 PLATFORMS
@@ -59,8 +63,8 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   pg
-  puma
   sinatra
   sinatra-activerecord
   slack-ruby-client
   terminal-table
+  unicorn

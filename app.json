@@ -1,9 +1,9 @@
 {
   "name": "bgc_bot",
-  "description": "A template for getting started with the WebSockets on Heroku using Ruby.",
-  "website": "http://github.com/heroku-examples/bgc_bot",
+  "description": "Slack Bot for board games",
+  "website": "https://github.com/jdnguyen/BGC_BOT",
   "success_url": "/",
-  "addons": ["rediscloud"],
+  "addons": [],
   "env": {},
   "scripts": {}
 }
