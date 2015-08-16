@@ -123,11 +123,11 @@ game duration N - N is the minutes for game duration
           list << [game[:id], game[:name], game[:ranking], format_players(game), format_time(game)]
         end
 
-        Terminal::Table.new :headings => ['ID', 'Title', 'Ranking', '# of Players', 'Duration'], :rows => list
+        "```#{Terminal::Table.new :headings => ['ID', 'Title', 'Ranking', '# of Players', 'Duration'], :rows => list}```"
       end
 
       def message(data, &block)
-        return if data['channel'] != 'C03SX3GQ8' && ENV['BGC_ONLY'] == 'true'
+        #return unless data['channel'] == 'C03SX3GQ8'
 
         message = ''
         begin
