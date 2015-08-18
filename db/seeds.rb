@@ -1,4 +1,4 @@
-require './models/game'
+Dir["./models/*.rb"].each {|file| require file }
 
 games = [
     {
@@ -345,25 +345,52 @@ You belong to one of these groups and must conceal your identity from others sin
 
 The key to victory is to identify your allies and enemies early because once your identity is revealed, your enemies will attack with impunity using their special abilities like Demolish, Teleport, and Suck Blood or their equipment cards such as the Rusty Broad Ax or Fortune Brooch. This ancient battle comes to a head and only one group will stand victorious-or a civilian, in the right circumstances, might claim victory."
     },
+    {
+       :name => 'Exploding Kittens',
+       :ranking => 3794,
+       :min_player => 2,
+       :max_player => 9,
+       :link => 'https://boardgamegeek.com/boardgame/172225/exploding-kittens',
+       :rules => 'http://www.explodingkittens.com/',
+       :min_time => 20,
+       :max_time => nil,
+       :description => "Exploding Kittens is a kitty-powered version of Russian Roulette. Players take turns drawing cards until someone draws an exploding kitten and loses the game. The deck is made up of cards that let you avoid exploding by peeking at cards before you draw, forcing your opponent to draw multiple cards, or shuffling the deck.
+
+The game gets more and more intense with each card you draw because fewer cards left in the deck means a greater chance of drawing the kitten and exploding in a fiery ball of feline hyperbole."
+    },
+    {
+       :name => 'Eclipse',
+       :ranking => 10,
+       :min_player => 2,
+       :max_player => 6,
+       :link => 'https://boardgamegeek.com/boardgame/72125/eclipse',
+       :rules => 'https://dl.dropboxusercontent.com/u/5496950/Eclipse-rules/Eclipse_rules_EN_compr.pdf',
+       :min_time => 60,
+       :max_time => 200,
+       :description => "The galaxy has been a peaceful place for many years. After the ruthless Terran-Hegemony War (30.027-33.364), much effort has been employed by all major spacefaring species to prevent the terrifying events from repeating themselves. The Galactic Council was formed to enforce precious peace, and it has taken many courageous efforts to prevent the escalation of malicious acts. Nevertheless, tension and discord are growing among the seven major species and in the Council itself. Old alliances are shattering, and hasty diplomatic treaties are made in secrecy. A confrontation of the superpowers seems inevitable - only the outcome of the galactic conflict remains to be seen. Which faction will emerge victorious and lead the galaxy under its rule?
+
+A game of Eclipse places you in control of a vast interstellar civilization, competing for success with its rivals. You will explore new star systems, research technologies, and build spaceships to wage war with. There are many potential paths to victory, so you need to plan your strategy according to the strengths and weaknesses of your species, while paying attention to the other civilizations' endeavors.
+
+The shadows of the great civilizations are about to eclipse the galaxy. Lead your people to victory!"
+    }
 #{
-#    :id => ,
 #    :name => '',
 #    :ranking => ,
 #    :min_player => ,
 #    :max_player => ,
 #    :link => '',
+#    :rules => '',
 #    :min_time => ,
 #    :max_time => ,
 #    :description => ""
 #},
 ]
 
-
 games.each do |game_data|
   game = Game.find_by_name(game_data[:name])
   if game
     game.update_attributes(game_data)
   else
-    Game.create(game)
+    Game.create(game_data)
   end
 end
