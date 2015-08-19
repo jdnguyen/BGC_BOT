@@ -52,6 +52,7 @@ def get_game_stat(data)
     game = game_for_id(data, 2)
 
     played = game.plays.order('created_at DESC').first(5).map{ |play| play.created_at.strftime("%m/%d/%Y") }
+    played_text = played.empty? ? '' : "Last Played ```#{played.join("\n")} ```"
 
     winnings = game.wins.group(:user_id).count
     win_rows = winnings.map do |win|
@@ -60,9 +61,7 @@ def get_game_stat(data)
 
     "Number of times played: #{game.plays.count}
 
-Number of times voted for: #{game.user_votes.count}
-
-Last Played ``` #{played.join("\n")} ```
+#{played_text}
 
 Previous Winners ```#{Terminal::Table.new :headings => ['User', 'Wins'], :rows => win_rows}```
 "

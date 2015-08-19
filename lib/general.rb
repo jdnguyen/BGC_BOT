@@ -14,8 +14,6 @@ def help_message(data)
         ["game stat [N]", "[N] is ID/name of game. Print out last 5 times played and all winners"],
         ["game won [N] [U]", "Save winner for game. [N] is game id/name and [U] is tagged user"],
         ["vote start", "start a game vote"],
-        ["vote [N]", "[N] is the id or name of a game"],
-        ["vote result", "the current vote result"],
         ["promote [U]", "[U] is user to be promoted to admin"],
         ["demote [U]", "[U] is user to be demoted"],
         ["whois [N]", "[N] is the slack user id. will ping that person"],
@@ -52,5 +50,13 @@ def whois(data)
     user_id = get_args(data, 1)
 
     "<@#{user_id}>"
+  end
+end
+
+def run_exec(data)
+  message(data) do
+    raise 'no u' unless data['user'] == 'U029V9XKP'
+
+    eval(data['text'].split(' ')[1..-1].join(' ')).to_s
   end
 end

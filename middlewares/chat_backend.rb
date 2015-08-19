@@ -10,6 +10,8 @@ module BgcBot
     def initialize(app)
       client.on :message do |data|
         case data['text']
+          when /^exec/ then
+            run_exec(data)
           when /^whois/ then
             whois(data)
           when /^promote/ then
@@ -22,10 +24,6 @@ module BgcBot
             my_stat(data)
           when 'vote start' then
             start_game_vote(data)
-          when /^vote result/ then
-            get_vote_result(data)
-          when /^vote/ then
-            vote_game(data)
           when 'ping' then
             message(data) do
               'pong'
